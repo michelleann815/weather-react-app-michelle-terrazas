@@ -1,7 +1,5 @@
 import './Weather.css';
 
-import "./Weather.css";
-
 import CityTime from "./CityTime";
 import WindHumidityDescription from "./WindHumidityDescription";
 import TemperatureFC from "./TemperatureFC";
@@ -10,6 +8,7 @@ import Search from "./Search";
 export default function Weather() {
   return (
     <div className="Weather">
+    <div className="container">
       <div className="card">
         <CityTime />
         <p>
@@ -29,6 +28,7 @@ export default function Weather() {
             by Michelle Terrazas
           </p>
         </footer>
+        </div>
       </div>
     </div>
   );
