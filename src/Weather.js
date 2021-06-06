@@ -1,5 +1,5 @@
+import React from "react";
 import './Weather.css';
-
 import CityTime from "./CityTime";
 import WindHumidityDescription from "./WindHumidityDescription";
 import TemperatureFC from "./TemperatureFC";
