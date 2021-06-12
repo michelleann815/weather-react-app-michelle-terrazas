@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
+import WeatherTemperature from "./WeatherTemperature";
 import axios from "axios";
 import './Weather.css';
 
@@ -38,33 +39,9 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-    <div className="Weather">
-      <div className="cityTime">
-      <h1 className="city">{weatherData.city}</h1>
-      <h5 className="date"><FormattedDate date={weatherData.date} /></h5>
-    </div>
-    <div className="windHumidityDescription">
-      <p className="wind"> {weatherData.wind} km/h</p>
-      <p className="humidity">{weatherData.humidity}%</p>
-      <p className="description">{weatherData.description}</p>
-    </div>
-    <div className="temperatureFC">
-      <img
-        src={weatherData.icon}
-        width="115px"
-        className="WeatherIcon"
-        alt="weather today"
-      />
-    <div className="temperature">{weatherData.temperature}°</div>
-    <div className="fahrenheitCelsius">
-        <button type="button" className="btn btn-danger">
-          °F
-        </button>
-        <button type="button" className="btn btn-primary">
-          °C
-        </button>
-    </div>
-    </div>
+      <div className="Weather">
+      <WeatherInfo data={weatherData} />
+      <WeatherTemperature coordinates={weatherData.coordinates} />
       <form className="submit" onSubmit={handleSubmit}>
       <input type="text" placeholder="Enter city here" className="form-control"
                 autoFocus="on"
