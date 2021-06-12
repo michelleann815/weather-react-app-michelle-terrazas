@@ -41,7 +41,6 @@ export default function Weather(props) {
     return (
       <div className="Weather">
       <WeatherInfo data={weatherData} />
-      <WeatherTemperature coordinates={weatherData.coordinates} />
       <form className="submit" onSubmit={handleSubmit}>
       <input type="text" placeholder="Enter city here" className="form-control"
                 autoFocus="on"

@@ -20,16 +20,14 @@ export default function WeatherTemperature (props) {
     if (unit==="celsius")  {
         return (
         <div className="WeatherTemperature">
-            <span className="temperature">{Math.round(props.celsius)}</span>
-            <span className="unit">°</span>
+            <span className="temperature">{Math.round(props.celsius)}°</span>
             <button type="button" className="btn btn-danger" onClick={showFahrenheit}>°F
             </button>
       </div>
     );
         } else  {
             return ( <div className="WeatherTemperature">
-                <span className="temperature">{Math.round(fahrenheit())}</span>
-                <span className="unit">°</span>
+                <span className="temperature">{Math.round(fahrenheit())}°</span>
                 <button type="button" className="btn btn-primary" onClick={showCelsius}>
             °C
           </button>
