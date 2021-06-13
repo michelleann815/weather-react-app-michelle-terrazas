@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Loader from "react-loader-spinner";
 import axios from "axios";
 import './Weather.css';
 
@@ -52,6 +53,7 @@ export default function Weather(props) {
   );
      } else {
        search ();
-       return "Loading...";
+       return (<Loader type="Hearts" color="#FF6289" height={80} width={80}
+      />);
      }
     }

@@ -11,8 +11,8 @@ export default function WeatherInfo (props) {
       <h5 className="date"><FormattedDate date={props.data.date} /></h5>
     </div>
     <div className="windHumidityDescription">
-      <p className="wind"> {props.data.wind} km/h</p>
-      <p className="humidity">{props.data.humidity}%</p>
+      <p className="wind"> {props.data.wind} km/h winds</p>
+      <p className="humidity">{props.data.humidity}% humidity</p>
       <p className="description">{props.data.description}</p>
     </div>
     <WeatherIcon code={props.data.icon} alt={props.data.description} width="115px" />
