@@ -12,7 +12,7 @@ export default function App() {
                     <a
               href="https://github.com/michelleann815/my-shecodes-plus-weather-app "
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
                     >
               Open-source code
                     </a>{" "}
@@ -20,7 +20,7 @@ export default function App() {
           <a
             href="https://thirsty-knuth-23b2aa.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             hosted on Netlify
           </a>{" "}

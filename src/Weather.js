@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import Loader from "react-loader-spinner";
 import axios from "axios";
 import './Weather.css';
@@ -41,6 +42,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
       <WeatherInfo data={weatherData} />
+      <WeatherForecast coordinates= {weatherData.coordinates}/>
       <form className="submit" onSubmit={handleSubmit}>
       <input type="text" placeholder="Enter city here" className="form-control"
                 autoFocus="on"
