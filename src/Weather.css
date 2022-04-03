@@ -55,7 +55,7 @@ p {
 }
 
 .Weather {
-  background: white;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   border: 1px solid;
   border-radius: 30px;
   margin: 0 auto;
