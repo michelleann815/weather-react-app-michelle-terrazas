@@ -1,3 +1,6 @@
 body {
-  background-color: white;
+  background-image: url("./images/sam-hull-KCJKsJPe9pQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
