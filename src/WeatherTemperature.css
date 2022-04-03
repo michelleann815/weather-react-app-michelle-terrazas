@@ -4,4 +4,6 @@ canvas {
 
 .temperature {
   size: 100px;
+  font-family: 'Permanent Marker',
+  cursive;
 }

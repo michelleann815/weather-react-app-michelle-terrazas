@@ -52,6 +52,8 @@ p {
 .Temperature {
   font-size: 50px;
   text-align: center;
+  font-family: 'Permanent Marker',
+  cursive;
 }
 
 .Weather {
@@ -64,4 +66,6 @@ p {
   max-width: 700px;
   padding: 20px;
   text-align: center;
+  font-family: 'Permanent Marker',
+  cursive;
 }

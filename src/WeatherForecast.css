@@ -1,9 +1,13 @@
 .WeatherForecast {
   padding: 5px;
   text-align: center;
+  font-family: 'Permanent Marker',
+  cursive;
 }
 
 .WeatherForecast-temperatures-min {
   opacity: 0.6;
   margin-left: 5px;
+  font-family: 'Permanent Marker',
+  cursive;
 }
